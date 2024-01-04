@@ -1,15 +1,13 @@
-package com.minwoo.spring.advanced.strategy.code;
+package com.minwoo.spring.advanced.callback.code;
 
 import lombok.extern.slf4j.Slf4j;
 
-// 템플릿(ContextV2) 콜백(Strategy) 패턴
 @Slf4j
-public class ContextV2 {
+public class TimeLogTemplate {
 
-    // 실행 시점에 전략을 받아서 실행
-    public void execute(Strategy strategy) {
+    public void execute(Callback callback) {
         long startTime = System.currentTimeMillis();
-        strategy.call();
+        callback.call();
         long endTime = System.currentTimeMillis();
 
         long resultTime = endTime - startTime;

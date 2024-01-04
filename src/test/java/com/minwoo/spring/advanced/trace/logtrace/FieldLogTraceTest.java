@@ -1,10 +1,7 @@
 package com.minwoo.spring.advanced.trace.logtrace;
 
 import com.minwoo.spring.advanced.trace.TraceStatus;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class FieldLogTraceTest {
 

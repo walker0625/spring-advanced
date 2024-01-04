@@ -1,15 +1,13 @@
-package com.minwoo.spring.advanced.trace.threadlocal;
+package com.minwoo.spring.advanced.threadlocal;
 
+import com.minwoo.spring.advanced.threadlocal.code.FieldServiceThread;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @Slf4j
-class FieldServiceTest {
+class FieldServiceThreadTest {
 
-    private FieldService fieldService = new FieldService();
+    private FieldServiceThread fieldService = new FieldServiceThread();
 
     @Test
     void field() {

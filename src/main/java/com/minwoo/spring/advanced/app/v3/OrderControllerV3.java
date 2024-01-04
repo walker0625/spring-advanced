@@ -1,7 +1,6 @@
 package com.minwoo.spring.advanced.app.v3;
 
 import com.minwoo.spring.advanced.trace.TraceStatus;
-import com.minwoo.spring.advanced.trace.hellotrace.HelloTraceV2;
 import com.minwoo.spring.advanced.trace.logtrace.LogTrace;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

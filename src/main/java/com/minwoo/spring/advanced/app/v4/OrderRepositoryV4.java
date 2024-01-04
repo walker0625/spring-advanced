@@ -1,6 +1,5 @@
 package com.minwoo.spring.advanced.app.v4;
 
-import com.minwoo.spring.advanced.trace.TraceStatus;
 import com.minwoo.spring.advanced.trace.logtrace.LogTrace;
 import com.minwoo.spring.advanced.trace.template.AbstractTemplate;
 import lombok.RequiredArgsConstructor;

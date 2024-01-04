@@ -1,4 +1,4 @@
-package com.minwoo.spring.advanced.trace.threadlocal;
+package com.minwoo.spring.advanced.threadlocal.code;
 
 import lombok.extern.slf4j.Slf4j;
 

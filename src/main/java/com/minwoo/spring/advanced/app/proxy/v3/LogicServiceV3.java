@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class ProxyServiceV3 {
+public class LogicServiceV3 {
 
-    private final ProxyRepositoryV3 orderRepository;
+    private final LogicRepositoryV3 orderRepository;
 
     public void orderItem(String itemId) {
         orderRepository.save(itemId);

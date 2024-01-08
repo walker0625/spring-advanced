@@ -1,6 +1,6 @@
 package com.minwoo.spring.advanced.app.proxy.v1;
 
-public class ProxyRepositoryV1Impl implements ProxyRepositoryV1 {
+public class LogicRepositoryV1Impl implements LogicRepositoryV1 {
 
     @Override
     public void save(String itemId) {

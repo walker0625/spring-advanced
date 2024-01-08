@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/proxy")
 @RestController
-public interface ProxyControllerV1 {
+public interface LogicControllerV1 {
 
     @GetMapping("/v1/request")
     String request(@RequestParam("itemId") String itemId); // interface에서는 @RequestParam("itemId")가 필요(jdk 버전마다 달라짐)

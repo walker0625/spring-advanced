@@ -4,22 +4,22 @@ import com.minwoo.spring.advanced.app.proxy.v1.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class ProxyAppV1Config {
 
     @Bean
-    public ProxyControllerV1 proxyControllerV1() {
-        return new ProxyControllerV1Impl(proxyServiceV1());
+    public LogicControllerV1 proxyControllerV1() {
+        return new LogicControllerV1Impl(proxyServiceV1());
     }
 
     @Bean
-    public ProxyServiceV1 proxyServiceV1() {
-        return new ProxyServiceV1Impl(proxyRepositoryV1());
+    public LogicServiceV1 proxyServiceV1() {
+        return new LogicServiceV1Impl(proxyRepositoryV1());
     }
 
     @Bean
-    public ProxyRepositoryV1 proxyRepositoryV1() {
-        return new ProxyRepositoryV1Impl();
+    public LogicRepositoryV1 proxyRepositoryV1() {
+        return new LogicRepositoryV1Impl();
     }
 
 }

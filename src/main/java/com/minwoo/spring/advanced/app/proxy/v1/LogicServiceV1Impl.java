@@ -1,10 +1,10 @@
 package com.minwoo.spring.advanced.app.proxy.v1;
 
-public class ProxyServiceV1Impl implements ProxyServiceV1 {
+public class LogicServiceV1Impl implements LogicServiceV1 {
 
-    private final ProxyRepositoryV1 orderRepository;
+    private final LogicRepositoryV1 orderRepository;
 
-    public ProxyServiceV1Impl(ProxyRepositoryV1 orderRepository) {
+    public LogicServiceV1Impl(LogicRepositoryV1 orderRepository) {
         this.orderRepository = orderRepository;
     }
 

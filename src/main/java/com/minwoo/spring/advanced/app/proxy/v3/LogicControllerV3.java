@@ -1,4 +1,4 @@
-package com.minwoo.spring.advanced.app.proxy.v2;
+package com.minwoo.spring.advanced.app.proxy.v3;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/proxy")
 @RequiredArgsConstructor
-public class ProxyControllerV2 {
+public class LogicControllerV3 {
 
-    private final ProxyServiceV2 orderService;
+    private final LogicServiceV3 orderService;
 
-    @GetMapping("/v2/request")
+    @GetMapping("/v3/request")
     public String request(@RequestParam("itemId") String itemId) {
         orderService.orderItem(itemId);
         return "ok";
     }
 
-    @GetMapping("/v2/no-log")
+    @GetMapping("/v3/no-log")
     public String noLog() {
         return "ok";
     }

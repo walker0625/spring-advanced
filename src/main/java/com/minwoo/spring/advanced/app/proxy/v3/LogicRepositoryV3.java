@@ -1,6 +1,9 @@
-package com.minwoo.spring.advanced.app.proxy.v2;
+package com.minwoo.spring.advanced.app.proxy.v3;
 
-public class ProxyRepositoryV2 {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class LogicRepositoryV3 {
 
     public void save(String itemId) {
         if (itemId.equals("ex")) {

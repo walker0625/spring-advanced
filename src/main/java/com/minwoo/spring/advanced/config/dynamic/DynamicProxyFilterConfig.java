@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Proxy;
 
-@Configuration
+//@Configuration
 public class DynamicProxyFilterConfig {
 
     private static final String[] PATTERNS = {"request*", "order*", "save*"};

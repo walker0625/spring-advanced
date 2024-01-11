@@ -1,6 +1,5 @@
 package com.minwoo.spring.advanced.config.advice;
 
-import com.minwoo.spring.advanced.app.proxy.v1.*;
 import com.minwoo.spring.advanced.app.proxy.v2.LogicControllerV2;
 import com.minwoo.spring.advanced.app.proxy.v2.LogicRepositoryV2;
 import com.minwoo.spring.advanced.app.proxy.v2.LogicServiceV2;
@@ -47,6 +46,7 @@ public class ProxyFactoryConfigV2 {
     private Advisor getAdvisor(LogTrace logTrace) {
         NameMatchMethodPointcut pointcut = new NameMatchMethodPointcut();
         pointcut.setMappedNames("request*", "order*", "save*");
+
         LogTraceAdvice advice = new LogTraceAdvice(logTrace);
 
         return new DefaultPointcutAdvisor(pointcut, advice);
